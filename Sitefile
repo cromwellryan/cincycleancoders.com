@@ -1,0 +1,8 @@
+# SITE.user = "cincycleancode"
+# SITE.host = "cincycleancoders.org"
+# SITE.remote_dir = "~/webapps/cincycleancoders"
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => [:build, 'deploy:rsync']
