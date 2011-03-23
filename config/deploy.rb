@@ -7,7 +7,7 @@ set :domain, 'cincycleancoders.com'
 set :application, 'cincycleancoders'
 
 set :repository,  "git@github.com:cromwellryan/cincycleancoders.com.git"
-set :deploy_to, "/home/#{user}/webapps/#{application}"
+set :deploy_to, "~/webapps/#{application}"
 set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
