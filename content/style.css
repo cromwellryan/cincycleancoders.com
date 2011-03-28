@@ -1,2 +1,6 @@
 h2 { margin-right: 4px; display: inline; }
+html, body { height: 100%; }
 .note { margin:12px; }
+#container { height: 100% }
+#content { min-height: 100%; height: 100%; margin-bottom: -8em; }
+#footer { text-align: center; }
