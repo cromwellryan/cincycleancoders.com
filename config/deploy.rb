@@ -2,7 +2,7 @@ default_run_options[:pty] = true
 
 set :ssh_options, {:forward_agent => true}
 
-set :user, 'cincycleancode'
+set :user, 'crowmellryan'
 set :domain, 'cincycleancoders.com'
 set :application, 'cincycleancoders'
 
@@ -23,6 +23,6 @@ after :deploy, "webby:deploy"
 namespace :webby do  
   desc "Generate the webby site"  
   task :deploy do  
-    run("cd #{deploy_to}/current && ~/.gem/ruby/1.8/bin/WEBBY")
+    run("cd #{deploy_to}/current && webby")
   end
 end
