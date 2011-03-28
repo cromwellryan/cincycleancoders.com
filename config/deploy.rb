@@ -2,7 +2,7 @@ default_run_options[:pty] = true
 
 set :ssh_options, {:forward_agent => true}
 
-set :user, 'crowmellryan'
+set :user, 'cromwellryan'
 set :domain, 'cincycleancoders.com'
 set :application, 'cincycleancoders'
 
