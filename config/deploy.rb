@@ -23,6 +23,6 @@ after :deploy, "webby:deploy"
 namespace :webby do  
   desc "Generate the webby site"  
   task :deploy do  
-    run("cd #{deploy_to}/current && webby")
+    run("cd #{deploy_to}/current && ~/gems/bin/webby")
   end
 end
